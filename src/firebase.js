@@ -6,7 +6,7 @@ import { getStorage } from "firebase/storage";
 
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyD4Pax-h502aul5WA4S_wmGCzddWb1e1AE',
+  apiKey: import.meta.env.VITE_KEY,
   authDomain: "katalog-app-2e15a.firebaseapp.com",
   databaseURL: "gs://katalog-app-2e15a.appspot.com",
   projectId: "katalog-app-2e15a",
