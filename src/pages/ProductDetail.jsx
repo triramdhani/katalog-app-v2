@@ -6,30 +6,56 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import formatCurrency from '../utils/formatCurrency'
 import discountCalc from '../utils/discountCalc'
+import { useEffect } from 'react'
+import { useParams } from 'react-router-dom'
+import { doc, getDoc } from "firebase/firestore";
+import { db } from '../firebase'
 
-function Gambar({image}) {
+const Gambar = ({image})=> {
   return (
-    <img  src={`/src/assets/${image}` } className="w-[100vw] h-[180px]"/>    
+    <img  src={image} className="w-[100vw] h-[180px]"/>    
   )
 }
 
 const Product = ({cart, setCart}) => {
+  const slug = useParams()
   const Navigate = useNavigate()
-  const Location = useLocation()
-  const product = Location.state
+  const [product, setProduct] = useState([]) 
+  const [activeVariant, setActiveVariant] = useState({})
 
-  const [activeVariant, setActiveVariant] = useState(product.variant[0])
+  const [isLoading, setIsLoading]= useState(true)
+
+    const fetchData = async () => {
+      const docRef = doc(db, "product", slug.id);
+      const docSnap = await getDoc(docRef);
+      if (docSnap.exists()) {
+        setProduct(docSnap.data())
+        setActiveVariant(docSnap.data().variant[0])
+      } else {
+        console.log("No such document!");
+      }
+      setIsLoading(false)
+      }      
+
+  useEffect(() => {
+    setTimeout(() => {
+      fetchData()
+    }, 1000);
+  },[])
   
+  if (isLoading === true) {
+    return <div>loading..</div>
+  }
   return (
     <div>
-      <Header pageTitle={product.metaTitle} />
+       <Header pageTitle={product.metaTitle} />
       <Swiper
         direction='horizontal'
         slidesPerView={1}
         spaceBetween={30}
         className="p-6"
       >
-        {product.koleksigambarNolinked.map((item, index) => { 
+        {product.koleksiGambarNolinked.map((item, index) => { 
           return (
             <SwiperSlide key={index} className='w-[100vw]'>
             <Gambar  image={item} />
@@ -58,7 +84,7 @@ const Product = ({cart, setCart}) => {
           )
         })}
       </div>
-      <AddToCart cart={cart} setCart={setCart} product={product} activeVariant={activeVariant} />
+      <AddToCart cart={cart} setCart={setCart} product={product} activeVariant={activeVariant} /> 
     </div>
   )
 }

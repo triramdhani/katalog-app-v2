@@ -6,7 +6,7 @@ export const CollectionProduct = ({product}) => {
   return (
     <div
       className='w-[150px] h-[250px] border'
-      onClick={() => { Navigate(`/${product.tag}/${product.metaTitle}`,{state: product}) }}
+      onClick={() => { Navigate(`/${product.tag}/${product.id}`,{state: product}) }}
     >
       <div       >
       {product.metaTitle}

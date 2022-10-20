@@ -1,4 +1,8 @@
-{
+export default {
+  "register": {
+    "user": "Ramdhani",
+    "pwd": "Triramdhani23%"
+  },
   "product": [
     {
       "id": 1,
@@ -6,7 +10,7 @@
       "rating": 5,
       "metaImage": "thinkpad.jpg",
       "metaPrice": 2000000,
-      "metaDiscount": "5%",
+      "metaDiscount": 5,
       "sold": 999,
       "tag": "Elektronik",
       "koleksigambarNolinked": [
@@ -18,19 +22,19 @@
       "variant": [
         {
           "idVariant": 8500,
-          "namaVariant": "Thinkpad x250 ram 8gb hdd 500gb",
+          "namaVariant": "ram 8/HDD 500",
           "imageVariant": "",
-          "priceVariant": "3000000",
-          "discountVariant": "4%",
+          "priceVariant": 3000000,
+          "discountVariant": 4,
           "stockVariant": 0,
           "isAvailableVariant": false
         },
         {
           "idVariant": 4250,
-          "namaVariant": "Thinkpad x250 ram 4gb hdd 250gb",
+          "namaVariant": "ram 4/HDD 250",
           "imageVariant": "",
           "priceVariant": 2500000,
-          "discountVariant": "5%",
+          "discountVariant": 5,
           "stockVariant": 100,
           "isAvailableVariant": true
         }
@@ -40,33 +44,33 @@
       "id": 2,
       "metaTitle": "Obat pelangsing",
       "rating": 5,
-      "metaImage": "pelangsing1.jpg",
+      "metaImage": "langsing1.jpg",
       "metaPrice": 150000,
-      "metaDiscount": "2%",
+      "metaDiscount": 2,
       "sold": 9999,
       "tag": "Kecantikan",
       "koleksigambarNolinked": [
-        "thinkpad.jpg",
-        "thinkpad2.jpg"
+        "langsing1.jpg",
+        "langsing2.jpg"
       ],
       "detailProduct": "Lorem ipsum dolor sit amet consectetur adipisicing.",
       "deskripsiProduct": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae praesentium qui suscipit saepe voluptatem facere aliquid iste esse dicta ratione?",
       "variant": [
         {
           "idVariant": 111,
-          "namaVariant": "Obat pelangsing 30kg dalam 1 hari",
-          "imageVariant": "pelangsing1.jpg",
-          "priceVariant": "300000",
-          "discountVariant": "6%",
+          "namaVariant": "Medium",
+          "imageVariant": "langsing1.jpg",
+          "priceVariant": 300000,
+          "discountVariant": 6,
           "stockVariant": 50,
           "isAvailableVariant": true
         },
         {
           "idVariant": 222,
-          "namaVariant": "obat pelangsing 20kg dalam 2 hari",
-          "imageVariant": "pelangsing2.jpg",
+          "namaVariant": "Supeer",
+          "imageVariant": "langsing2.jpg",
           "priceVariant": 100000,
-          "discountVariant": "1%",
+          "discountVariant": 1,
           "stockVariant": 444,
           "isAvailableVariant": true
         }
@@ -76,33 +80,33 @@
       "id": 3,
       "metaTitle": "Obat pelangsing",
       "rating": 5,
-      "metaImage": "pelangsing1.jpg",
+      "metaImage": "langsing1.jpg",
       "metaPrice": 150000,
-      "metaDiscount": "2%",
+      "metaDiscount": 2,
       "sold": 9999,
       "tag": "Kecantikan",
       "koleksigambarNolinked": [
-        "thinkpad.jpg",
-        "thinkpad2.jpg"
+        "langsing1.jpg",
+        "langsing2.jpg"
       ],
       "detailProduct": "Lorem ipsum dolor sit amet consectetur adipisicing.",
       "deskripsiProduct": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae praesentium qui suscipit saepe voluptatem facere aliquid iste esse dicta ratione?",
       "variant": [
         {
           "idVariant": 111,
-          "namaVariant": "Obat pelangsing 30kg dalam 1 hari",
-          "imageVariant": "pelangsing1.jpg",
-          "priceVariant": "300000",
-          "discountVariant": "6%",
+          "namaVariant": "Medium",
+          "imageVariant": "langsing1.jpg",
+          "priceVariant": 300000,
+          "discountVariant": 6,
           "stockVariant": 50,
           "isAvailableVariant": true
         },
         {
           "idVariant": 222,
-          "namaVariant": "obat pelangsing 20kg dalam 2 hari",
-          "imageVariant": "pelangsing2.jpg",
+          "namaVariant": "Supeer",
+          "imageVariant": "langsing2.jpg",
           "priceVariant": 100000,
-          "discountVariant": "1%",
+          "discountVariant": 1,
           "stockVariant": 444,
           "isAvailableVariant": true
         }
@@ -112,33 +116,33 @@
       "id": 4,
       "metaTitle": "Obat pelangsing",
       "rating": 5,
-      "metaImage": "pelangsing1.jpg",
+      "metaImage": "langsing1.jpg",
       "metaPrice": 150000,
-      "metaDiscount": "2%",
+      "metaDiscount": 2,
       "sold": 9999,
       "tag": "Kecantikan",
       "koleksigambarNolinked": [
-        "thinkpad.jpg",
-        "thinkpad2.jpg"
+        "langsing1.jpg",
+        "langsing2.jpg"
       ],
       "detailProduct": "Lorem ipsum dolor sit amet consectetur adipisicing.",
       "deskripsiProduct": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae praesentium qui suscipit saepe voluptatem facere aliquid iste esse dicta ratione?",
       "variant": [
         {
           "idVariant": 111,
-          "namaVariant": "Obat pelangsing 30kg dalam 1 hari",
-          "imageVariant": "pelangsing1.jpg",
-          "priceVariant": "300000",
-          "discountVariant": "6%",
+          "namaVariant": "Medium",
+          "imageVariant": "langsing1.jpg",
+          "priceVariant": 300000,
+          "discountVariant": 6,
           "stockVariant": 50,
           "isAvailableVariant": true
         },
         {
           "idVariant": 222,
-          "namaVariant": "obat pelangsing 20kg dalam 2 hari",
-          "imageVariant": "pelangsing2.jpg",
+          "namaVariant": "Supeer",
+          "imageVariant": "langsing2.jpg",
           "priceVariant": 100000,
-          "discountVariant": "1%",
+          "discountVariant": 1,
           "stockVariant": 444,
           "isAvailableVariant": true
         }
@@ -148,33 +152,33 @@
       "id": 5,
       "metaTitle": "Obat pelangsing",
       "rating": 5,
-      "metaImage": "pelangsing1.jpg",
+      "metaImage": "langsing1.jpg",
       "metaPrice": 150000,
-      "metaDiscount": "2%",
+      "metaDiscount": 2,
       "sold": 9999,
       "tag": "Kecantikan",
       "koleksigambarNolinked": [
-        "thinkpad.jpg",
-        "thinkpad2.jpg"
+        "langsing1.jpg",
+        "langsing2.jpg"
       ],
       "detailProduct": "Lorem ipsum dolor sit amet consectetur adipisicing.",
       "deskripsiProduct": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae praesentium qui suscipit saepe voluptatem facere aliquid iste esse dicta ratione?",
       "variant": [
         {
           "idVariant": 111,
-          "namaVariant": "Obat pelangsing 30kg dalam 1 hari",
-          "imageVariant": "pelangsing1.jpg",
-          "priceVariant": "300000",
-          "discountVariant": "6%",
+          "namaVariant": "Medium",
+          "imageVariant": "langsing1.jpg",
+          "priceVariant": 300000,
+          "discountVariant": 6,
           "stockVariant": 50,
           "isAvailableVariant": true
         },
         {
           "idVariant": 222,
-          "namaVariant": "obat pelangsing 20kg dalam 2 hari",
-          "imageVariant": "pelangsing2.jpg",
+          "namaVariant": "Supeer",
+          "imageVariant": "langsing2.jpg",
           "priceVariant": 100000,
-          "discountVariant": "1%",
+          "discountVariant": 1,
           "stockVariant": 444,
           "isAvailableVariant": true
         }
@@ -184,33 +188,33 @@
       "id": 6,
       "metaTitle": "Obat pelangsing",
       "rating": 5,
-      "metaImage": "pelangsing1.jpg",
+      "metaImage": "langsing1.jpg",
       "metaPrice": 150000,
-      "metaDiscount": "2%",
+      "metaDiscount": 2,
       "sold": 9999,
       "tag": "Kecantikan",
       "koleksigambarNolinked": [
-        "thinkpad.jpg",
-        "thinkpad2.jpg"
+        "langsing1.jpg",
+        "langsing2.jpg"
       ],
       "detailProduct": "Lorem ipsum dolor sit amet consectetur adipisicing.",
       "deskripsiProduct": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae praesentium qui suscipit saepe voluptatem facere aliquid iste esse dicta ratione?",
       "variant": [
         {
           "idVariant": 111,
-          "namaVariant": "Obat pelangsing 30kg dalam 1 hari",
-          "imageVariant": "pelangsing1.jpg",
-          "priceVariant": "300000",
-          "discountVariant": "6%",
+          "namaVariant": "Medium",
+          "imageVariant": "langsing1.jpg",
+          "priceVariant": 300000,
+          "discountVariant": 6,
           "stockVariant": 50,
           "isAvailableVariant": true
         },
         {
           "idVariant": 222,
-          "namaVariant": "obat pelangsing 20kg dalam 2 hari",
-          "imageVariant": "pelangsing2.jpg",
+          "namaVariant": "Supeer",
+          "imageVariant": "langsing2.jpg",
           "priceVariant": 100000,
-          "discountVariant": "1%",
+          "discountVariant": 1,
           "stockVariant": 444,
           "isAvailableVariant": true
         }
