@@ -1,6 +1,17 @@
 import React from 'react'
+import { doc, deleteDoc } from "firebase/firestore";
+import { db } from '../../firebase';
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const PreviewMode = ({setEditMode, product}) => {
+const PreviewMode = ({setEditMode, product, productId}) => {
+  const Navigate = useNavigate()
+  const handleDelete = async() => {
+    await deleteDoc(doc(db, "product", productId));
+    alert('berhasil dihapus!')
+    Navigate(-1)
+  }
+
   return (
     <div>
       <h1>PreviewMode</h1>
@@ -38,7 +49,7 @@ const PreviewMode = ({setEditMode, product}) => {
 
 
       <button onClick={()=>setEditMode(prev => !prev)}>Edit Product</button>
-      <button>Delete product</button>
+      <button onClick={handleDelete}>Delete product</button>
     </div>
 
   )

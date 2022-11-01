@@ -43,17 +43,18 @@ const Dashboard = () => {
   }
 
   return (
-    <>
-      <Search Search={search} setSearch={setSearch} handleChange={handleSearchChange} handleSearch={handleSearchSubmit} />
-      
-      <div className='block'>
+    <div className=''>
+      <div className='flex justify-center'>
+        <Search Search={search} setSearch={setSearch} handleChange={handleSearchChange} handleSearch={handleSearchSubmit} />
+      </div>
+      <div className='block mt-8 ml-2 mr-2'>
         {product.map((item,index) => {
           return (
             <AdminProductCard product={item} index={index} key={item.id} />
             )
           })}
       </div>
-    </>
+    </div>
   )
 }
 

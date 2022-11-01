@@ -19,19 +19,6 @@ const Edit = () => {
   const [isLoading, setIsLoading] = useState(true)
   const [editMode, setEditMode] = useState(false)
 
-  // React.useEffect(()=> {
-  //   async function fetchApi() {
-  //     const res = await fetch('http://localhost:3000/product')
-  //     const data = await res.json()
-  //     let thisProduct = []
-  //     data.find(obj => {
-  //       obj.metaTitle === slug.id && thisProduct.push(obj)
-  //     })
-  //     setProduct(thisProduct[0])
-  //     setIsLoading(false)
-  //   }
-  //   fetchApi()
-  // }, [])
   const fetchData = async() => {
       const docRef = doc(db, "product", slug.id);
       const docSnap = await getDoc(docRef);

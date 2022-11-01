@@ -6,8 +6,16 @@ const Admin = () => {
   return (
     <>
       <HomeHeader pageTitle='Admin Dashboard'/>      
-      <Link to='/admin/kelola'>go to kelola</Link>
-      <Link to='/admin/add'>go to add new prodct</Link>
+      <section className={" mt-8 items-center text-center text-lg"}>
+        <button className={"px-3 py-2 border rounded-lg bg-blue-800 text-white "}>
+          <Link to='/admin/kelola'>go to kelola product</Link>
+        </button>
+        <br />
+        <div>Or</div>
+        <button className={"px-3 py-2 border rounded-lg bg-red-600 text-white"}>
+          <Link to='/admin/add'>go to add new prodct</Link>
+        </button>
+      </section>
     </>
   )
 }

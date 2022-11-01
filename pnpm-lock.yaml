@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@fontsource/plus-jakarta-sans': ^4.5.10
   '@heroicons/react': ^2.0.12
   '@types/react': ^18.0.17
   '@types/react-dom': ^18.0.6
@@ -18,6 +19,7 @@ specifiers:
   vite: ^3.1.0
 
 dependencies:
+  '@fontsource/plus-jakarta-sans': 4.5.10
   '@heroicons/react': 2.0.12_react@18.2.0
   axios: 1.1.3
   firebase: 9.12.1
@@ -788,6 +790,10 @@ packages:
 
   /@firebase/webchannel-wrapper/0.8.0:
     resolution: {integrity: sha512-Q8erQds5LuAUgNuFOt/tu/abffYUHYxN+Ogp2V5EOssfFG7Ja4ce324Sqyq41u/vB5CSr+tfYS3JzTDrDxCvdw==}
+    dev: false
+
+  /@fontsource/plus-jakarta-sans/4.5.10:
+    resolution: {integrity: sha512-WWyrjO6qyL7j3itLJUEE/rHRyDfypsoIvpvI6Ld0vyEae49P613cm5UBRe5zMnPjNC7dXBQ8/fjbszbifkL6BA==}
     dev: false
 
   /@grpc/grpc-js/1.7.2:

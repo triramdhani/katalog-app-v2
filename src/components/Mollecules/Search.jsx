@@ -11,8 +11,8 @@ const Search = ({Search, setSearch, handleChange, handleSearch}) => {
 
   return (
     <div>
-      <input type="text" ref={searchRef} onChange={handleChange} className="border"/>
-      <button className='border ' onClick={handleSearch}>Cari</button>
+      <input type="text" ref={searchRef} onChange={handleChange} className="border outline-none rounded-md border-slate-900 mr-1"/>
+      <button className='border px-3 rounded-md' onClick={handleSearch}>Cari</button>
     </div>
   )
 }

@@ -2,12 +2,11 @@ import React, {useState, useEffect} from 'react'
 import { useNavigate } from 'react-router-dom'
 import Header from '../components/Mollecules/HomeHeader'
 import HomeProduct from '../components/Mollecules/HomeProduct'
-import dab from '../data/db'
-import findTag from '../utils/findTag'
 import { Swiper , SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import { collection, getDocs } from "firebase/firestore";
 import { db } from '../firebase'
+import findTag from '../utils/findTag'
 
 export const Home = () => {
 
@@ -45,17 +44,35 @@ export const Home = () => {
     })
     return (
       <div key={kategori} className="mt-[26px]">
-        <div className='flex justify-between ml-[34px] mr-[34px] mb-[22px] items-center'>
-          <div >koleksi {kategori}</div>
-          <div onClick={() => Navigate(`/${kategori}`, { state: koleksiByCategory })} className="text-end text-[16px]">Lihat semua</div>
+        <div
+          className='flex justify-between ml-[34px] mr-[34px] mb-[22px] items-center'>
+          <div
+            className='text-[25px]'>koleksi <span className='font-semibold'>{kategori}</span>
+          </div>
+          <div
+            onClick={() => Navigate(`/${kategori}`)}
+            className="text-end text-[14px] hover:text-blue-600 cursor-pointer">Lihat semua
+          </div>
         </div>
-        {/* mapping koleksi hanya sampai 5 product saja */}
         <Swiper
           direction='horizontal'
           spaceBetween={10}
           slidesPerView={2}
-          className='ml-[24px] mb-[50px] '
-        >
+          breakpoints={{
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            780: {
+              slidesPerView: 4,
+              spaceBetween: 1,
+            },
+            1024: {
+              slidesPerView: 7,
+              spaceBetween:10
+            }
+          }}
+          className='ml-[24px] mb-[50px] '>
           {displayedProductAtHome.map(item => { 
             return (
               <SwiperSlide key={item.id}>
@@ -73,9 +90,12 @@ export const Home = () => {
   })
 
   return (
-    <div>
-      <Header pageTitle="Tri Electronics" />
+    <>
+      <Header pageTitle="Tiruannya" />
+      <div>
+        
+      </div>
       {kategoryElement}
-    </div>
+    </>
   )
 }

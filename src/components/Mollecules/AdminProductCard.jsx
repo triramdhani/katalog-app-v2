@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 
 const AdminProductCard = ({product, index}) => {
   return (
-    <div className='flex gap-3 justify-between' key={product.id}>
-      <div>{index}</div>
-      <img src={product.metaImage} alt="" className='w-[100px] h-[100px]'/>
-      <div>{product.metaTitle}</div>
-      <div>
+    <div className='grid grid-cols-5 border m-1 rounded-lg py-1 items-center' key={product.id}>
+      <div className=''>{index}</div>
+      <img src={product.metaImage} alt="" className=' w-[40px] h-[40px]'/>
+      <div className=''>{product.metaTitle}</div>
+      <div className=''>
         {product.variant.map(item => <div key={item.idVariant}>{item.namaVariant}</div>)}
       </div>
       <div className=''>

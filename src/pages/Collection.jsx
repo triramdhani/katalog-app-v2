@@ -46,17 +46,21 @@ function Collection() {
   }
 
   return (
-    <div> 
+    <> 
       <Header pageTitle={slug} />
-      <LabelTotalProduct total={koleksi.length}/>
-      {koleksi.map(item => {
-        return (
-          <div key={item.id}>
-            <CollectionProduct product={item}/>
-          </div>
-        )
-      })}
-    </div>
+      <div className={"ml-8"}>
+        <LabelTotalProduct total={koleksi.length} />
+      </div>
+      <div className={"ml-8 grid grid-cols-2 gap-y-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8"}>
+        {koleksi.map(item => {
+          return (
+            <div key={item.id}>
+              <CollectionProduct product={item}/>
+            </div>
+          )
+        })}
+      </div>
+    </>
 
   )
 }
